@@ -1,0 +1,247 @@
+@media (max-width: 1260px) {
+    .hero{
+        padding-bottom: 50px;
+        
+        .container{
+
+            .hero_content{
+                flex-direction: column-reverse;
+                gap: 40px;
+    
+                .hero_img{
+                    max-width: 720px;
+
+                    img{
+                        width: 100%;
+                        border-radius: 6px;
+                    }
+                }
+
+                .hero_text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h1{
+                        text-align: center;
+                        max-width: 500px;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .about{
+
+        .container{
+
+            .about_content{
+
+                .cards_wrapper{
+                    grid-template-columns: repeat(1 , 1fr);
+
+                    .card{
+                        padding: 49px 120px;
+                    }
+                }
+            }
+        }
+    }
+
+    .houses{
+
+        .container{
+
+            .houses_content{
+
+                .house{
+                    &:first-child{
+                        flex-direction: column-reverse;
+                    }
+                    &:last-child{
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .header{
+
+        .container{
+
+            .navbar{
+                justify-content: space-between;
+
+                .nav_logo{
+                    flex: none;
+                }
+
+                .nav_menu{
+                    display: block;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                .navbar_collection{
+                    position: absolute;
+                    flex-direction: column;
+                    align-items: center;
+                    top: 0;
+                    transform: translateX(-100%);
+                    left: 0;
+                    padding-block: 50px;
+                    padding-inline: 100px;
+                    gap: 20px;
+                    min-height: 100vh;
+                    background: $nav_text;
+                    transition: .5s;
+                    opacity: 1;
+                    z-index: 99;
+
+                    .nav_close{
+                        display: block;
+                    }
+                    
+                    & *{
+                        color: white;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .header{
+
+        .container{
+
+            .navbar{
+                justify-content: space-between;
+
+                .nav_menu{
+                    position: unset;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .nav_btns{
+        display: none;
+    }
+    .nav_btns_min{
+        display: flex !important;
+    }
+   
+    .hero{
+        .container{
+            .hero_content{
+                .hero_text{
+                    form{
+                        flex-direction: column;
+                        gap: 10px;
+
+                        input{
+                            padding-block: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .about{
+
+        .container{
+
+            .about_content{
+
+                .cards_wrapper{
+                    grid-template-columns: repeat(1 , 1fr);
+
+                    .card{
+                        padding: 39px 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .title{
+        font-size: 36px;
+    }
+    .subtitle{
+        font-size: 16px;
+    }
+
+    .hero{
+        
+        .container{
+
+            .hero_content{
+
+                .hero_text{
+
+                    h1{
+                        font-size: 36px;
+                        line-height: 40px;
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .houses{
+
+        .container{
+
+            .houses_content{
+
+                .house{
+
+                    .house_text{
+                        h1{
+                            font-size: 36px;
+                            line-height: 45px;
+                        }
+                        P{
+                            font-size: 16px;
+                            line-height: 25px;
+                        }
+
+                        .house_cards{
+                            
+                            .house_card{
+
+                                .house_card_text{
+                                    p{
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    transition: .2s ease-out;
+    
+    .container{
+        
+        .navbar{
+            display: flex;
+            padding-block: 16px;
+            align-items: center;
+        
+            .nav_logo{
+                display: flex;
+                align-items: center;
+                flex: 1;
+            }
+        
+            .nav_menu{
+                cursor: pointer;
+                font-size: 25px;
+                display: none;
+            }
+
+            .navbar_collection{
+                gap: 32px;
+                margin-right: 24px;
+
+                .nav_close{
+                    display: none;
+                }
+        
+                li{
+                    font-size: 16px;
+                    color: $nav_text;
+                    line-height: 24px;
+                    text-align: left;
+                }
+            }
+        
+            .nav_btns{
+                gap: 16px;
+        
+                button{
+                    padding-block: 8px;
+                    border-radius: 6px;
+                    border: 1px;
+                    display: flex;
+                    align-items: center;
+                    transition: .2s ease-out;
+                    cursor: pointer;
+        
+                    &:first-child{
+                        border: 1px solid #E7E8E3;
+                        color: $text_pr;
+                        background: $bg_white;
+                        box-shadow: 0px 2px 4px 0px #00000014;
+                        line-height: 24px;
+                        padding-inline: 16px;
+        
+                        &:hover{
+                            background: $nav_text;
+                            color: white;
+        
+                            p{
+                                &::before{
+                                    filter: invert(1);
+                                }
+                            }
+                        }
+        
+                        p{
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+        
+                            &::before{
+                                content: url(../assets/shopping_bag.png);
+                                transition: .2s ease-out;
+                                transform: translateY(10%);
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+        
+                    &:last-child{
+                        background-color: $bg_pr;
+                        color: $bg_white;
+                        padding-inline: 21px;
+        
+                        &:hover{
+                            background-color: $bg_white;
+                            color: $bg_pr;
+                            outline: 1px solid $bg_pr;
+                        }
+                    }
+                }
+            }
+            
+            .nav_btns_min{
+                display: none;
+                
+                gap: 16px;
+        
+                button{
+                    padding-block: 8px;
+                    border-radius: 6px;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    transition: .2s ease-out;
+                    cursor: pointer;
+        
+                    &:first-child{
+                        border: 1px solid #E7E8E3;
+                        color: $text_pr;
+                        background: $bg_white;
+                        box-shadow: 0px 2px 4px 0px #00000014;
+                        line-height: 24px;
+                        padding-inline: 16px;
+        
+                        &:hover{
+                            background: $nav_text;
+                            color: white;
+        
+                            img{
+                                filter: invert(1);
+                            }
+                        }
+                    }
+        
+                    &:last-child{
+                        background-color: $bg_pr;
+                        color: $bg_white;
+                        padding-inline: 21px;
+
+                        img{
+                            filter: invert(1);
+                        }
+
+                        &:hover{
+                            background-color: $bg_white;
+                            color: $bg_pr;
+                            outline: 1px solid $bg_pr;
+
+                            img{
+                                filter: invert(0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

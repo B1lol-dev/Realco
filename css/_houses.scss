@@ -1,0 +1,109 @@
+.houses{
+        padding-bottom: 128px;
+
+    .container{
+
+        .houses_content{
+            display: flex;
+            flex-direction: column;
+            gap: 128px;
+
+            .house{
+                display: flex;
+                gap: 80px;
+                align-items: center;
+    
+                &:first-child{
+                    justify-content: space-between;
+                }
+
+                .house_img{
+                    max-width: 600px;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .house_text{
+                    h1{
+                        font-size: 48px;
+                        font-weight: 700;
+                        line-height: 57.6px;
+                        text-align: left;
+                        color: $text_pr;
+                        max-width: 453px;
+                        padding-block: 20px 28px;
+                    }
+    
+                    p{
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 27px;
+                        text-align: left;
+                        color: $text_sc;
+                        max-width: 520px;
+                        padding-bottom: 21px;
+                    }
+
+                    .house_cards{
+                        display: flex;
+                        gap: 24px;
+                        padding-block: 29px 24px;
+
+                        .house_card{
+                            
+                            .house_card_text{
+                                h4{
+                                    padding-block: 16px 18px;
+                                    color: $text_pr;
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    line-height: 28px;
+                                    text-align: left;
+                                } 
+
+                                p{
+                                    color: $text_sc;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    text-align: left;
+
+                                    &:first-child{
+                                        max-width: 245px;
+                                    }
+                                    &:last-child{
+                                        max-width: 281px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .house_text_btns{
+                        display: flex;
+                        gap: 24px;
+    
+                        button{
+                            padding-block: 13px;
+                            background: none;
+                            border-radius: 6px;
+                            font-size: 16px;
+    
+                            &:first-child{
+                                padding-inline: 25px;
+                                border: 1px solid #E7E8E3;
+                                box-shadow: 0px 2px 4px 0px #00000014;
+                            }
+    
+                            &:last-child{
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

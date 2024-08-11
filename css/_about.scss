@@ -1,0 +1,57 @@
+.about{
+    padding-block: 140px 234px;
+
+    .container{
+
+        .about_content{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+    
+            .subtitle{
+                max-width: 754px;
+            }
+    
+            .cards_wrapper{
+                display: grid;
+                grid-template-columns: repeat(3 , 1fr);
+                gap: 32px;
+                padding-top: 64px;
+
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border: 1px solid #E7E8E3;
+                    border-radius: 16px;
+                    padding: 49px 33px;
+
+                    img{
+                        max-width: 48px;
+                    }
+
+                    .card_text{
+                        h3{
+                            font-size: 24px;
+                            font-weight: 700;
+                            line-height: 33.6px;
+                            text-align: center;
+                            padding-block: 24px 17px;
+                            color: $text_pr;
+                        }   
+
+                        p{
+                            font-family: Roboto;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            text-align: center;
+                            max-width: 338px;
+                            color: $text_sc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

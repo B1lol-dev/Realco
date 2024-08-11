@@ -1,0 +1,95 @@
+.hero{
+    background: $bg_hero;
+    margin-top: 74px;
+
+    .container{
+
+        .hero_content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .hero_text{
+
+                h1{
+                    font-size: 56px;
+                    font-weight: 400;
+                    line-height: 67.2px;
+                    text-align: left;
+                    padding-block: 20px;
+                }
+
+                p{
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    text-align: left;
+                    color: $text_sc;
+                    max-width: 503px;
+                    padding-bottom: 21px;
+                }
+
+                form{
+                    display: flex;
+                    gap: 16px;
+                    position: relative;
+
+                    img{
+                        position: absolute;
+                        transform: translateY(50%);
+                        margin-left: 16px;
+                        z-index: 1;
+                    }
+
+                    input{
+                        padding-left: 56px;
+                        padding-right: 102px;
+                        // width: 310px;
+                        outline: none;
+                        padding-block: 11px;
+                        border: none;
+                        border-radius: 6px;
+
+                        display: flex;
+
+                        box-shadow: 0px 2px 4px 0px #00000014;
+
+                        &::placeholder{
+                            font-family: Roboto;
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 30px;
+                            text-align: left;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                    button{
+                        padding-block: 11px;
+                        padding-inline: 18px;
+                        border: none;
+                        background: $bg_pr;
+                        border-radius: 6px;
+                        cursor: pointer;
+
+                        font-family: Roboto;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        text-align: left;
+                        color: $bg_white;
+                        
+                        transition: .2s ease-out;
+
+                        &:hover{
+                            color: $bg_pr;
+                            background: $bg_white;
+                            outline: 1px solid $bg_pr;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
